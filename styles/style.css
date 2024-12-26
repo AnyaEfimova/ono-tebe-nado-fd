@@ -1,1 +1,255 @@
-/* место для вашего кода */
+body {
+  background-color: #f5f5f5;
+}
+
+.content-section {
+  box-sizing: border-box;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+  max-height: 293px;
+}
+.header_logo {
+  display: block;
+  width: 136px;
+}
+
+.header_menu {
+  display: flex;
+  gap: 33px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+  min-width: 240px;
+  justify-self: end;
+  line-height: 24px;
+}
+
+.cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 165px 50px 50px;
+  z-index: -1;
+}
+.overlay {
+  position: absolute;
+  background-color: rgb(0 0 0/ 0.5);
+  z-index: 0;
+  inset: 0;
+}
+.cover__title {
+  font-size: 100px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.15;
+  text-transform: uppercase;
+  padding-bottom: 106px;
+  position: relative;
+}
+
+.aligned-text {
+  display: block;
+  letter-spacing: 30px;
+}
+
+.aligned-text_center {
+  text-align: center;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.aligned-text_right {
+  text-align: right;
+  padding-top: 20px;
+  padding-left: 613px;
+}
+
+.cover__description {
+  display: flex;
+  gap: 104px;
+  word-spacing: 19px;
+  align-items: center;
+  position: relative;
+}
+
+.cover__description-text {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.bet-button {
+  margin: 0;
+  background-color: transparent;
+  width: 256px;
+  height: 51px;
+  border-color: #fff;
+}
+
+.lots {
+  padding: 180px 24px 0px;
+}
+
+.lots__heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  padding-left: 40px;
+  padding-bottom: 27px;
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  color: #fff;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 48px 40px 48px;
+}
+.card a {
+  height: 100%;
+}
+
+.lots__card-list a {
+  text-decoration: none;
+}
+
+.card_type_film {
+  position: relative;
+  background-image: url(../images/card-lot-01.jpg);
+}
+.card_type_book {
+  position: relative;
+  background-image: url(../images/card-lot-02.jpg);
+}
+.card_type_picture {
+  position: relative;
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card__text {
+  font-size: 20px;
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  padding-left: 40px;
+  padding-top: 30px;
+  display: block;
+}
+
+.about {
+  padding: 120px 24px 0px;
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "logo auction auction"
+    "logo auction auction"
+    "logo auction auction";
+  gap: 25px;
+}
+
+.about__logo {
+  padding-top: 35px;
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+}
+
+.about_auction {
+  grid-area: auction;
+}
+.about__logo-image {
+  display: flex;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: #000000;
+  justify-content: center;
+  align-items: center;
+}
+.about__logo-image img {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 134px;
+  padding-bottom: 100px;
+}
+.about__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 24px;
+  line-height: 24px;
+}
+
+.footer {
+  padding: 181px 50px 82px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer_address {
+  font-style: normal;
+  line-height: 24px;
+}
+.footer__menu {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+  justify-content: end;
+}
+.footer__social-icon {
+  display: block;
+  width: 48px;
+}
